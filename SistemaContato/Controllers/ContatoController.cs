@@ -26,7 +26,7 @@ namespace SistemaContato.Controllers
         public IActionResult Editar(int id)
         {
             ContatoModel contato =_contatoRepositorio.ListarPorId(id);
-            return View();
+            return View(contato);
         }
 
         public IActionResult ExcluirConfirmacao()
@@ -37,6 +37,12 @@ namespace SistemaContato.Controllers
         [HttpPost]public IActionResult Criar(ContatoModel contato)
         {
             _contatoRepositorio.Adicionar(contato);
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public IActionResult Alterar(ContatoModel contato)
+        {
+            _contatoRepositorio.Atualizar(contato);
             return RedirectToAction("Index");
         }
 

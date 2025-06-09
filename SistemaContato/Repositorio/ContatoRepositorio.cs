@@ -10,10 +10,19 @@ namespace SistemaContato.Repositorio
 
         public ContatoRepositorio(BancoContext bancoContext)
         {
-            _context = bancoContext;
+            this._context= bancoContext;
 
         }
 
+        public ContatoModel ListarPorId(int id)
+        {
+            return _context.Contatos.FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<ContatoModel> buscarTodos()
+        {
+            return _context.Contatos.ToList();
+        }
         public ContatoModel Adicionar(ContatoModel contato)
         {
             //Gravar no banco de dados
@@ -22,14 +31,18 @@ namespace SistemaContato.Repositorio
             return contato;
         }
 
-        public List<ContatoModel> buscarTodos()
+        public ContatoModel Atualizar(ContatoModel contato)
         {
-            return _context.Contatos.ToList();
-        }
+            ContatoModel contatoDB = ListarPorId(contato.Id);
+            if (contatoDB == null) throw new System.Exception("Houve um atualização no contato!");
 
-        public ContatoModel ListarPorId(int id)
-        {
-            return _context.Contatos.FirstOrDefault(x => x.Id == id);
+            contatoDB.Nome = contato.Nome;
+            contato.Email = contato.Email;
+            contatoDB.Celular = contato.Celular;
+
+            _context.Contatos.Update(contatoDB);
+            _context.SaveChanges();
+            return contatoDB;
         }
     }
 }
