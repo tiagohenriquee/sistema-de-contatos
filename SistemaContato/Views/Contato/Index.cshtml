@@ -1,0 +1,49 @@
+﻿@model List<ContatoModel>
+
+<div class="text-center">
+    <h1 class="display-4">Lista de Contatos</h1>
+    
+    <br />
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a asp-controller="Contato" asp-action="Criar" role="button" class="btn btn-primary">Adicionar Contato</a>
+    </div>
+
+    <br />
+    <br />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Celular</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model != null && Model.Any())
+            {
+                foreach(ContatoModel contato in Model)
+                {
+                    <tr>
+                        <th scope="row">@contato.Id</th>
+                        <td>@contato.Nome</td>
+                        <td>@contato.Email</td>
+                        <td>@contato.Celular</td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a asp-controller="Contato" asp-action="Editar" asp-route-id="@contato.Id" role="button" class="btn btn-outline-primary">Editar</a>
+                                <a asp-controller="Contato" asp-action="ExcluirConfirmacao" asp-route-id="@contato.Id" role="button" class="btn btn-outline-danger">Excluir</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+                
+            }
+            
+        </tbody>
+    </table>
+</div>
+
