@@ -37,12 +37,22 @@ namespace SistemaContato.Repositorio
             if (contatoDB == null) throw new System.Exception("Houve um atualização no contato!");
 
             contatoDB.Nome = contato.Nome;
-            contato.Email = contato.Email;
+            contatoDB.Email = contato.Email;
             contatoDB.Celular = contato.Celular;
 
             _context.Contatos.Update(contatoDB);
             _context.SaveChanges();
             return contatoDB;
+        }
+
+        public bool Apagar(int id)
+        {
+            ContatoModel contatoDB = ListarPorId(id);
+            if (contatoDB == null) throw new System.Exception("Houve uma deleção no contato!");
+            _context.Contatos.Remove(contatoDB);
+            _context.SaveChanges();
+            
+            return true;
         }
     }
 }
