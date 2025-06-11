@@ -1,8 +1,25 @@
 ﻿@model List<ContatoModel>
 
 <div class="text-center">
+
+    @if (TempData["MenssagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert">X</button>
+            @TempData["MenssagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MenssagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert">X</button>
+            @TempData["MenssagemErro"]
+        </div>
+    }
+
     <h1 class="display-4">Lista de Contatos</h1>
-    
+
     <br />
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -23,9 +40,9 @@
             </tr>
         </thead>
         <tbody>
-            @if(Model != null && Model.Any())
+            @if (Model != null && Model.Any())
             {
-                foreach(ContatoModel contato in Model)
+                foreach (ContatoModel contato in Model)
                 {
                     <tr>
                         <th scope="row">@contato.Id</th>
@@ -40,9 +57,9 @@
                         </td>
                     </tr>
                 }
-                
+
             }
-            
+
         </tbody>
     </table>
 </div>
