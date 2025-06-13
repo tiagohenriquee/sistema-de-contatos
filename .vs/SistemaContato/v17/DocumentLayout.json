@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{40E17D74-4613-4858-AD4B-6F2F4F588C31}|SistemaContato\\SistemaContato.csproj|c:\\users\\tiago.silva\\source\\repos\\sistemacontato\\sistemacontato\\data\\bancocontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E17D74-4613-4858-AD4B-6F2F4F588C31}|SistemaContato\\SistemaContato.csproj|solutionrelative:sistemacontato\\data\\bancocontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E17D74-4613-4858-AD4B-6F2F4F588C31}|SistemaContato\\SistemaContato.csproj|c:\\users\\tiago.silva\\source\\repos\\sistemacontato\\sistemacontato\\data\\bancocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E17D74-4613-4858-AD4B-6F2F4F588C31}|SistemaContato\\SistemaContato.csproj|solutionrelative:sistemacontato\\data\\bancocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E17D74-4613-4858-AD4B-6F2F4F588C31}|SistemaContato\\SistemaContato.csproj|c:\\users\\tiago.silva\\source\\repos\\sistemacontato\\sistemacontato\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E17D74-4613-4858-AD4B-6F2F4F588C31}|SistemaContato\\SistemaContato.csproj|solutionrelative:sistemacontato\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{40E17D74-4613-4858-AD4B-6F2F4F588C31}|SistemaContato\\SistemaContato.csproj|c:\\users\\tiago.silva\\source\\repos\\sistemacontato\\sistemacontato\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40E17D74-4613-4858-AD4B-6F2F4F588C31}|SistemaContato\\SistemaContato.csproj|solutionrelative:sistemacontato\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +38,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "BancoContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\Data\\BancoContextFactory.cs",
+              "RelativeDocumentMoniker": "SistemaContato\\Data\\BancoContextFactory.cs",
+              "ToolTip": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\Data\\BancoContextFactory.cs",
+              "RelativeToolTip": "SistemaContato\\Data\\BancoContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T20:23:31.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BancoContext.cs",
+              "DocumentMoniker": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\Data\\BancoContext.cs",
+              "RelativeDocumentMoniker": "SistemaContato\\Data\\BancoContext.cs",
+              "ToolTip": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\Data\\BancoContext.cs",
+              "RelativeToolTip": "SistemaContato\\Data\\BancoContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T15:37:53.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaContato\\Program.cs",
+              "ToolTip": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\Program.cs",
+              "RelativeToolTip": "SistemaContato\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T15:34:47.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "SistemaContato\\wwwroot\\js\\site.js",
@@ -38,12 +89,11 @@
               "RelativeToolTip": "SistemaContato\\wwwroot\\js\\site.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-11T13:49:47.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T13:49:47.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\Views\\Contato\\Editar.cshtml",
               "RelativeDocumentMoniker": "SistemaContato\\Views\\Contato\\Editar.cshtml",
@@ -51,12 +101,11 @@
               "RelativeToolTip": "SistemaContato\\Views\\Contato\\Editar.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-11T13:47:52.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T13:47:52.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\Views\\Contato\\Index.cshtml",
               "RelativeDocumentMoniker": "SistemaContato\\Views\\Contato\\Index.cshtml",
@@ -64,12 +113,11 @@
               "RelativeToolTip": "SistemaContato\\Views\\Contato\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-11T13:40:13.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T13:40:13.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ContatoController.cs",
               "DocumentMoniker": "C:\\Users\\tiago.silva\\source\\repos\\SistemaContato\\SistemaContato\\Controllers\\ContatoController.cs",
               "RelativeDocumentMoniker": "SistemaContato\\Controllers\\ContatoController.cs",
